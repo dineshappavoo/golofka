@@ -5,8 +5,8 @@ Log processing CLI to process stream data using Kafka and store in Elasticsearch
 Once the api takes the object from the queue , it will then be passed to processor function for further computation. Yhis api provides the flexibility to store the object in Elasticsearch for further log analysis and indexing.
 
 ####Command Line Interface:
-|Command | Description |
-|--------|-------------|
+|Command 			  | Description |
+|---------------------|-------------|
 |golofka -startserver        |	This reads starts the kafka, elastic search and api servers	|
 |golofka -initapi            |	This initlizes the api by reading the JSON/YAML file and keep the service ready	|
 |golofka -version            |	prints the version of the api	|
