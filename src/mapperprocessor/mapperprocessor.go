@@ -20,6 +20,7 @@ func mapper(object string) (interface{}, error) {
 }
 
 func processor(object interface{}) error {
+
 	fmt.Println(object.(Tweet).User)
 	fmt.Println(object.(Tweet).Message)
 	fmt.Println(object.(Tweet).Retweets)
@@ -27,6 +28,11 @@ func processor(object interface{}) error {
 }
 
 func main() {
-	content, _ := mapper("rereterte  erter ")
+	content, _ := mapper("8453753745375483 INFO rereterte  erter ")
+
+
+	///Queue
+
+
 	processor(content)
 }
